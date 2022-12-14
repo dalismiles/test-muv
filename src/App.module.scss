@@ -1,0 +1,12 @@
+@import "./styles/mixins";
+@import "./styles/_variables";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  @include form-text($text-align: center);
+  background-color: $white;
+}

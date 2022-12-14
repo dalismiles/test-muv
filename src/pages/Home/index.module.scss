@@ -1,0 +1,7 @@
+@import "../../styles/mixins";
+@import "../../styles/_variables";
+
+.Home {
+  @include flex-container($direction:column, $align:center);
+  @include box-model($width:100%)
+}

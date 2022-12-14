@@ -1,0 +1,32 @@
+@import "../../styles/_variables";
+@import "../../styles/_mixins";
+
+.Navbar {
+  @include box-model($width: 100%, $height: 200px);
+  @include flex-container(row, space-around, center);
+
+  background-color: $sugarpaper;
+  color: $white;
+
+  .companyLogo {
+    @include flex-container(row, center, center, nowrap, 0.8rem);
+    @include form-text(3rem, normal, bold);
+
+    img {
+      @include box-model(0, 0, 5rem);
+    }
+  }
+
+  ul {
+    @include flex-container(row, space-evenly, center, nowrap, 1.2rem);
+    li {
+      list-style-type: none;
+
+      a {
+        @include form-text(1rem, normal, bold);
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}

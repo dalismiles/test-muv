@@ -1,0 +1,33 @@
+@import "../../styles/mixins";
+@import "../../styles/_variables";
+
+* {
+  text-decoration: none;
+}
+
+.singlePost {
+  @include flex-container($direction: column, $gap: 20px);
+  @include box-model($margin: 15px, $padding: 15px, $width: 300px);
+  @include border($radius: 8px);
+  @include form-text($text-align: center, $font-weight: 200, $font-size: small);
+
+  &:hover {
+    color: $aubergine;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+  }
+
+  .postTitle {
+    @include form-text(
+      $font-weight: 600,
+      $font-style: italic,
+      $font-size: small
+    );
+    margin-bottom: 10px;
+    color: $aubergine;
+  }
+  .postBody {
+    text-align: justify;
+    color: $ottanio;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../styles/_mixins";
+
+.error {
+  @include box-model($height: 100vh);
+  @include flex-container(row, center, center);
+
+  img {
+    @include box-model($height: 60%);
+  }
+}

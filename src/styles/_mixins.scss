@@ -1,0 +1,64 @@
+@mixin flex-container(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $wrap: nowrap,
+  $gap: 0px
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+@mixin box-model(
+  $margin: 0,
+  $border: 0,
+  $padding: 0,
+  $width: auto,
+  $height: auto
+) {
+  margin: $margin;
+  border: $border;
+  padding: $padding;
+  width: $width;
+  height: $height;
+}
+
+@mixin border(
+  $border: 0,
+  $radius: 0,
+  $top-right: auto,
+  $bottom-right: auto,
+  $bottom-left: auto,
+  $top-left: auto
+) {
+  border: $border;
+  border-radius: $radius;
+  border-top-right-radius: $top-right;
+  border-bottom-right-radius: $bottom-right;
+  border-bottom-left-radius: $bottom-left;
+  border-top-left-radius: $top-left;
+}
+
+@mixin form-text(
+  $font-size: 16px,
+  $font-style: normal,
+  $font-weight: 400,
+  $letter-spacing: normal,
+  $line-height: normal,
+  $text-decoration: none,
+  $text-transform: none,
+  $text-align: left
+) {
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+  text-transform: $text-transform;
+  text-align: $text-align;
+}

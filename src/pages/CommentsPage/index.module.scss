@@ -1,0 +1,6 @@
+@import "../../styles/mixins";
+@import "../../styles/_variables";
+
+.CommentsPage {
+  @include flex-container($direction:column, $align:center);
+}
